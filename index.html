@@ -1,7 +1,46 @@
 <html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+    
+    .box{
+        display:flex;
+        align-items: center;
+    }
+    #text_header{
+        color: white;
+        text-shadow: 10px 10px 8px rgba(0,0,0,0.5);
 
+    }
+    .img_header{
+        display:float;
+        grid-area: company_img;
+        height: 150x;
+        width: 150px;
+        transform: rotate(30deg);
+        margin-left: 20px;
+        font-family: 'Bebas Neue';
+    }
+    .name_header{
+        grid-area:nav;
+    }
+    #header{
+        background-color:#334d5c;
+        min-height: 100px;
+        border-radius: 5px;
+        display:grid;
+        grid-template-columns: auto 1fr;
+        grid-template-areas: "header_img  nav";
+
+    }
+</style>
 <body>
 
+<header id="header"> 
+    <div class="box"><img class= "img_header" src="img/shampoo.png" alt="Logo Of The Company"><h1 id="text_header">SHAMP-BIO</h1></div>
+</header>
+<footer>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a
+            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
