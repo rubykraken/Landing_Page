@@ -1,88 +1,91 @@
 <html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <style>
-    
-    .box{
-       max-height: 90px;
-       border-radius: 5px;
-       width:100%;
-       background-color:#334d5c;
-       display:grid;
-       grid-template-columns: auto 50%;
-       justify-content: space-evenly;
-       grid-template-areas: "company_img nav";
+    .box {
+        max-height: 90px;
+        border-radius: 5px;
+        width: 100%;
+        background-color: #334d5c;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        justify-content: space-evenly;
+        grid-template-areas: "company_img nav";
         grid-gap: 600px;
         justify-content: right;
     }
-    .himage{
+
+    .himage {
         grid-area: company_img;
-        
+
     }
-.hnav{
-    grid-area: nav;
-    margin-top: 20px;
-}
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #334d5c;
-  
-}
-nav ul li{
-   float:left;
-border-radius: 5px;
-}
-nav ul li a{
-      display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-nav ul li a:hover {
-  background-color: #2d7097;
-}
-    #header-img{}
-    #header{}
-    #nav-bar{
-        position:fixed;
+
+    .hnav {
+        grid-area: nav;
+        margin-top: 20px;
     }
-@media screen and (min-width: 400px){
-    .box {
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto;
-        grid-template-areas: "company_img"
-                                "nav";
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #334d5c;
+
     }
-}
+
+    nav ul li {
+        float: left;
+        border-radius: 5px;
+    }
+
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        background-color: #2d7097;
+    }
+
+    #header-img {}
+
+    #header {}
+
+    #nav-bar {
+        position: fixed;
+    }
+    
 </style>
+
 <body>
 
-<header id="header"> 
-    <div class="box">
-       <div class="himage"> <img id="header-img" src="img/Logo.png" alt="Logo Of The Company">
-    </div>
-    <div class="hnav"><nav id="nav-bar">
-        <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#home">How Is It Made</a></li>
-            <li><a href="#home">Fragrances</a></li>
-        </ul>
-        </nav>
-    </div>
-    
-    </div>
+    <header id="header">
+        <div class="box">
+            <div class="himage"> <img id="header-img" src="img/Logo.png" alt="Logo Of The Company">
+            </div>
+            <div class="hnav">
+                <nav id="nav-bar">
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#home">How Is It Made</a></li>
+                            <li><a href="#home">Fragrances</a></li>
+                        </ul>
+                    </nav>
+            </div>
 
-   
+        </div>
 
-</header>
-<footer>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a
-            href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+    </header>
+    <footer>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
-</html>
 
+</html>
