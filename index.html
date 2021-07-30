@@ -3,12 +3,12 @@
 <style>
     
     .box{
-       max-height: 100px;
+       max-height: 90px;
        border-radius: 5px;
        width:100%;
        background-color:#334d5c;
        display:grid;
-       grid-template-columns: auto 1fr;
+       grid-template-columns: auto 50%;
        justify-content: space-evenly;
        grid-template-areas: "company_img nav";
         grid-gap: 600px;
@@ -46,8 +46,17 @@ nav ul li a:hover {
 }
     #header-img{}
     #header{}
-    #nav-bar{}
-
+    #nav-bar{
+        position:fixed;
+    }
+@media screen and (min-width: 400px){
+    .box {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        grid-template-areas: "company_img"
+                                "nav";
+    }
+}
 </style>
 <body>
 
