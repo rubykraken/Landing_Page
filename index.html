@@ -1,32 +1,27 @@
 <html>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<style>
-    .box {
-        max-height: 90px;
-        border-radius: 5px;
-        width: 100%;
-        background-color: #334d5c;
-        display: grid;
-        grid-template-columns: auto 1fr;
-        justify-content: space-evenly;
-        grid-template-areas: "company_img nav";
-        grid-gap: 600px;
-        justify-content: right;
+    <style>
+        body{
+            background-color:#334d5c ;
+        }
+        .box{
+          max-height: 100px;
+          background:#334d5c;
+          display:flex;
+          flex-direction: row;
+    }
+    .container{
+        min-height: 300px;
+        width:100%;
+        background:#334d5c;
+        display:flex;
     }
 
-    .himage {
-        grid-area: company_img;
-
-    }
-
-    .hnav {
-        grid-area: nav;
-        margin-top: 20px;
-    }
-
-    nav ul {
+    
+        
+nav ul {
         list-style-type: none;
-        margin: 0;
+        margin-top: 20px;
+      margin-right: 20px;
         padding: 0;
         overflow: hidden;
         background-color: #334d5c;
@@ -34,7 +29,7 @@
     }
 
     nav ul li {
-        float: left;
+        float: right;
         border-radius: 5px;
     }
 
@@ -49,43 +44,73 @@
     nav ul li a:hover {
         background-color: #2d7097;
     }
+#img {
+    width:50%;
+    height:50%;
 
-    #header-img {}
-
-    #header {}
-
-    #nav-bar {
-        position: fixed;
+}
+#nav-bar {
+    width:50%;
+    height:50%;
+   
+}
+#header-img{
+    margin-left: 10px;
+}
+@media (max-width:650px){
+    .box{
+        background:#334d5c;
+          display:flex;
+          flex-direction: column;
     }
+    #img {
+    width:100%;
+    height:50%;
+
+}
+#nav-bar {
+    width:100%;
+    height:50%;
     
-</style>
+   
+}
+#header-img{
+ margin-left:140px;
 
-<body>
-
-    <header id="header">
-        <div class="box">
-            <div class="himage"> <img id="header-img" src="img/Logo.png" alt="Logo Of The Company">
+ 
+}
+nav ul{
+    margin-left: 120px;
+     margin-top:-40px;
+     float:left;
+}
+}
+    </style>
+    <body>
+    <header>
+    <div class="box">
+       
+            <div id="img">
+                <img id="header-img" src="img/Logo.png" alt="Logo Of The Company">
             </div>
-            <div class="hnav">
-                <nav id="nav-bar">
-                    <nav>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#home">How Is It Made</a></li>
-                            <li><a href="#home">Fragrances</a></li>
-                        </ul>
-                    </nav>
-            </div>
-
-        </div>
-
-
-
+            <nav id="nav-bar">
+                <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#home">How Is It Made</a></li>
+                        <li><a href="#home">Fragrances</a></li>
+                </ul>
+            </nav>
+            
+        
+    </div>
     </header>
-    <footer>
-        <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from
-            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-            <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
-
+<div class="container">
+    
+</div>
+ <footer>
+        <div>Icons made by</p>I <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script></div>
+    </footer></body>
+  
 </html>
