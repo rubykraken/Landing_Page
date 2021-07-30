@@ -1,25 +1,16 @@
-<html>
-    <style>
-        body{
-            background-color:#334d5c ;
-        }
-        .box{
+ <html>
+     <style>
+         body{
+             background-color:#334d5c ;
+         }
+          .box{
           max-height: 100px;
           background:#334d5c;
           display:flex;
           flex-direction: row;
     }
-    .container{
-        min-height: 300px;
-        width:100%;
-        background:#334d5c;
-        display:flex;
-    }
-
-    
-        
-nav ul {
-        list-style-type: none;
+    nav ul {
+        list-style-type:none;
         margin-top: 20px;
       margin-right: 20px;
         padding: 0;
@@ -49,6 +40,8 @@ nav ul {
     height:50%;
 
 }
+
+
 #nav-bar {
     width:50%;
     height:50%;
@@ -77,40 +70,54 @@ nav ul {
 #header-img{
  margin-left:140px;
 
+
  
 }
+
 nav ul{
     margin-left: 120px;
      margin-top:-40px;
      float:left;
+     }
 }
+     
+ .container{
+        width: 100%;
+        background:#334d5c;
+       display:grid;
+       grid-template-columns: 300px 1fr;
+       grid-template-rows: 200px 200px 200px;
+ }
+#graphics{
+    justify-self: end;
+    margin-top: 40px;
 }
-    </style>
-    <body>
-    <header>
-    <div class="box">
-       
+
+       </style>
+
+<body>
+    <header id="header">
+        <div class="box">
             <div id="img">
-                <img id="header-img" src="img/Logo.png" alt="Logo Of The Company">
+                <img id="header-img" src="img/Logo_1.png" alt="Logo Of The Company">
             </div>
             <nav id="nav-bar">
                 <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#home">How Is It Made</a></li>
-                        <li><a href="#home">Fragrances</a></li>
+                    <li><a class="nav-link" href="#home"> Get Started</a></li>
+                    <li><a class="nav-link" href="#home">Fragrances</a></li>
+                    <li><a class="nav-link" href="#home">How Is It Made</a></li>
                 </ul>
             </nav>
-            
+        </div>
         
-    </div>
+
+
     </header>
-<div class="container">
-    
-</div>
- <footer>
-        <div>Icons made by</p>I <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from
-        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script></div>
-    </footer></body>
-  
-</html>
+    <div class="container"> 
+    <div id="graphics"><object data="img/Ingredients.svg" height="200" width="200"></object></div>
+    <div></div>
+    <div id="graphics"><object data="img/Recipe.svg" height="200" width="200"></object></div>
+    </div>
+</body>
+
+ </html>
